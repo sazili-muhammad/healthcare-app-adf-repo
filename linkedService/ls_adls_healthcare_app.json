@@ -1,0 +1,10 @@
+{
+	"name": "ls_adls_healthcare_app",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://storagehealthcareapp.dfs.core.windows.net/"
+		}
+	}
+}

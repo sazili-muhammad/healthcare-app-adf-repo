@@ -11,7 +11,7 @@
 			"password": {
 				"type": "AzureKeyVaultSecret",
 				"store": {
-					"referenceName": "ls_kv_healthcare_postgresql",
+					"referenceName": "ls_kv_healthcare",
 					"type": "LinkedServiceReference"
 				},
 				"secretName": "postgresql-password"

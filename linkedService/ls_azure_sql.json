@@ -1,0 +1,23 @@
+{
+	"name": "ls_azure_sql",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "healthcare-sql-db-server.database.windows.net",
+			"database": "sql-db-healthcare-app",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "healthcare_admin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_kv_healthcare",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sqlserver-db-password"
+			}
+		}
+	}
+}

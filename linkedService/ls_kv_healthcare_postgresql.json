@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "AzureKeyVault",
 		"typeProperties": {
-			"baseUrl": "https://kv-healthcare-postgresql.vault.azure.net/"
+			"baseUrl": "https://kv-healthcare-app.vault.azure.net/"
 		}
 	}
 }

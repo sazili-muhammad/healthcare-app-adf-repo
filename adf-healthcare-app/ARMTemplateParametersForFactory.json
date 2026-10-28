@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-healthcare-app"
+		},
+		"ls_adls_healthcare_app_properties_typeProperties_url": {
+			"value": "https://storagehealthcareapp.dfs.core.windows.net/"
+		},
+		"ls_azure_sql_properties_typeProperties_server": {
+			"value": "healthcare-sql-db-server.database.windows.net"
+		},
+		"ls_azure_sql_properties_typeProperties_database": {
+			"value": "sql-db-healthcare-app"
+		},
+		"ls_azure_sql_properties_typeProperties_userName": {
+			"value": "healthcare_admin"
+		},
+		"ls_azuredatabricks_properties_typeProperties_existingClusterId": {
+			"value": "1022-122548-hsxmq5js"
+		},
+		"ls_kv_healthcare_properties_typeProperties_baseUrl": {
+			"value": "https://kv-healthcare-app.vault.azure.net/"
+		},
+		"ls_postgre_sql_properties_typeProperties_server": {
+			"value": "ep-patient-shadow-azvt2sc7-pooler.c-3.ap-southeast-1.aws.neon.tech"
+		},
+		"ls_postgre_sql_properties_typeProperties_database": {
+			"value": "neondb"
+		},
+		"ls_postgre_sql_properties_typeProperties_username": {
+			"value": "neondb_owner"
+		}
+	}
+}

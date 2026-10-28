@@ -51,6 +51,8 @@
 			{
 				"name": "Source to Landing Ingestion",
 				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Check Load Type",
@@ -118,6 +120,8 @@
 			{
 				"name": "Landing to Bronze",
 				"type": "DatabricksNotebook",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Source to Landing Ingestion",
@@ -159,6 +163,8 @@
 			{
 				"name": "Bronze to Silver",
 				"type": "DatabricksNotebook",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Landing to Bronze",
@@ -204,6 +210,8 @@
 			{
 				"name": "Update Success Status",
 				"type": "Script",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Bronze to Silver",
@@ -240,6 +248,8 @@
 			{
 				"name": "Check Load Type",
 				"type": "IfCondition",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Read Table Config",
@@ -319,6 +329,8 @@
 			{
 				"name": "Checking Load Type and Update Watermark",
 				"type": "IfCondition",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Bronze to Silver",

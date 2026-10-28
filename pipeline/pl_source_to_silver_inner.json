@@ -51,8 +51,6 @@
 			{
 				"name": "Source to Landing Ingestion",
 				"type": "Copy",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Check Load Type",
@@ -248,8 +246,6 @@
 			{
 				"name": "Check Load Type",
 				"type": "IfCondition",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Read Table Config",

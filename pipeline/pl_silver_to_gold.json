@@ -82,8 +82,6 @@
 						{
 							"name": "Update Failed Status",
 							"type": "Script",
-							"state": "Inactive",
-							"onInactiveMarkAs": "Succeeded",
 							"dependsOn": [
 								{
 									"activity": "Silver To Gold",
@@ -140,24 +138,6 @@
 								"notebookPath": {
 									"value": "/healthcare-app-repo/healthcare-app-adb-repo/Gold/NB_@{item().gold_table_name}",
 									"type": "Expression"
-								},
-								"baseParameters": {
-									"landing_timestamp": {
-										"value": "@variables('start_time')",
-										"type": "Expression"
-									},
-									"source_system": {
-										"value": "@activity('Read Table Config').output.firstRow.source_system",
-										"type": "Expression"
-									},
-									"table_name": {
-										"value": "@activity('Read Table Config').output.firstRow.bronze_table_name",
-										"type": "Expression"
-									},
-									"source_file_format": {
-										"value": "@coalesce(activity('Read Table Config').output.firstRow.source_file_format,'')",
-										"type": "Expression"
-									}
 								}
 							},
 							"linkedServiceName": {
@@ -168,8 +148,6 @@
 						{
 							"name": "Update Success Status",
 							"type": "Script",
-							"state": "Inactive",
-							"onInactiveMarkAs": "Succeeded",
 							"dependsOn": [
 								{
 									"activity": "Silver To Gold",

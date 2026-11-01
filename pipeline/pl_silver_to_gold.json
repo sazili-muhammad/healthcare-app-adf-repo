@@ -82,6 +82,8 @@
 						{
 							"name": "Update Failed Status",
 							"type": "Script",
+							"state": "Inactive",
+							"onInactiveMarkAs": "Succeeded",
 							"dependsOn": [
 								{
 									"activity": "Silver To Gold",
@@ -166,6 +168,8 @@
 						{
 							"name": "Update Success Status",
 							"type": "Script",
+							"state": "Inactive",
+							"onInactiveMarkAs": "Succeeded",
 							"dependsOn": [
 								{
 									"activity": "Silver To Gold",

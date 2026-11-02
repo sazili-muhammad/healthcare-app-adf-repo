@@ -5,6 +5,10 @@
 			"email_recipient": {
 				"type": "string",
 				"value": "sazili.muhammad@gadgetguylabs.onmicrosoft.com"
+			},
+			"env": {
+				"type": "string",
+				"value": "DEV"
 			}
 		}
 	},

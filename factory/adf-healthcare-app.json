@@ -1,0 +1,12 @@
+{
+	"name": "adf-healthcare-app",
+	"properties": {
+		"globalParameters": {
+			"email_recipient": {
+				"type": "string",
+				"value": "sazili.muhammad@gadgetguylabs.onmicrosoft.com"
+			}
+		}
+	},
+	"location": "southeastasia"
+}

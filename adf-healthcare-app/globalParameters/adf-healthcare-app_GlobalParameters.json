@@ -1,1 +1,14 @@
-{}
+{
+	"email_recipient": {
+		"type": "string",
+		"value": "sazili.muhammad@gadgetguylabs.onmicrosoft.com"
+	},
+	"env": {
+		"type": "string",
+		"value": "DEV"
+	},
+	"logic_apps_url": {
+		"type": "string",
+		"value": "https://prod-72.southeastasia.logic.azure.com:443/workflows/331126e5e20c460ca27edbef5d394fae/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=FdrrK2xp3DW_1IVv0SQfhb6vQV_uWxlLoMcVQc_z9l8"
+	}
+}

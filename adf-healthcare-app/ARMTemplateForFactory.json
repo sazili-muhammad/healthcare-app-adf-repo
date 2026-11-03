@@ -198,7 +198,7 @@
 							"source": {
 								"type": "AzureSqlSource",
 								"sqlReaderQuery": {
-									"value": "select b.source_table_name, b.gold_table_name, b.load_type, a.records_written, a.* from ctrl.audit_log a inner join ctrl.table_config b on a.table_id = b.table_id where adf_run_id = '@{pipeline().parameters.adf_run_id}' order by adf_run_id, a.table_id",
+									"value": "select b.source_table_name, b.gold_table_name, b.load_type, a.* from ctrl.audit_log a inner join ctrl.table_config b on a.table_id = b.table_id where adf_run_id = '@{pipeline().parameters.adf_run_id}' order by adf_run_id, a.table_id",
 									"type": "Expression"
 								},
 								"queryTimeout": "02:00:00",
